@@ -3,7 +3,7 @@
 require_once '../lib/Util.php';
 
 $rounds = Model::factory('Round')
-        ->order_by_desc('duration')
+        ->order_by_desc('start')
         ->find_many();
 
 $user = Session::getUser();
